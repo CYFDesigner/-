@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=0"/>
+    <title></title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/teacherAsk.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+<article class="content">
+    <!-- 老师信息 -->
+    <section class="teacherInfo">
+        <div class="head">
+
+        </div>
+        <div class="teacherName">
+
+        </div>
+        <p class="teacherIntroduce">
+
+        </p>
+        <ul class="teacherLableBox"></ul>
+    </section>
+    <!-- end 老师信息 -->
+
+    <!-- 提问模块 -->
+    <section class="teacherAsk" ng-app="">
+        <div ng-init="ask=''" style="display: none;"></div>
+        <div class="askInfo">任何有关新高考的问题都可以砸过来。例如：选科到底该怎么选？性格搜索？</div>
+        <textarea ng-model="ask" class="askBox" id="askBox" maxlength="300" placeholder="超过2日未回答，将按支付路径全额退款。"></textarea>
+        <p class="askBoxNumber" >
+            {{ask.length}}/300
+        </p>
+        <!-- 支付模块 -->
+        <p class="payText">专业咨询
+            <!--<span class="payOld">400元/次</span>-->
+            <span class="payNew">
+                <span class="payPrice"></span>
+            </span>
+        </p>
+        <button class="payButton">立即提问</button>
+        <!-- end 支付模块 -->
+    </section>
+    <!-- end 提问模块 -->
+
+    <!-- 登陆验证 -->
+    <section class="loginBox">
+        <form class="login" method="post" action="" target="id_iframe">
+            <p class="loginTitle">升学百科</p>
+            <label for="mobilePhone">
+                <input type="tel" placeholder="手机号码/准考证号" id="mobilePhone" class="mobilePhone" maxlength="15"/>
+            </label>
+            <label for="passWord">
+                <input type="password" placeholder="密码" id="passWord" class="passWord"/>
+            </label>
+            <button class="loginBtn">登 录</button>
+            <a href="forgetPage.html" class="forgetLink">忘记密码</a>
+            <a href="registerPage.html" class="registerLink">注册</a>
+            <span class="closePage icon-guanbi- iconfont"></span>
+            <iframe id="id_iframe" name="id_iframe" style="display: none"></iframe>
+        </form>
+    </section>
+    <!-- end 登陆验证 -->
+
+    <!-- 登陆退出状态显示 -->
+    <section class="signOutShow"></section>
+    <!-- end 登陆退出状态显示-->
+</article>
+<script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="min-js/iconfont.js"></script>
+<script type="text/javascript" src="min-js/angular.min.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/teacherAsk.js"></script>
+</body>
+</html>

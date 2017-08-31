@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+    <title>找回密码</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/registerPage.css" />
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+<article class="content">
+    <div class="registerBox">
+        <label class="verificationLable" for="password">
+            <span class="phoneIcon iconfont icon-password"></span>
+            <input type="password" class="password" id="password" placeholder="请输入6-12位新密码" minlength="6" maxlength="12"/>
+        </label>
+        <label class="verificationLable" for="passwordTrue">
+            <span class="phoneIcon iconfont icon-password"></span>
+            <input type="password" class="passwordTrue" id="passwordTrue" placeholder="请确认新密码" minlength="6" maxlength="12"/>
+        </label>
+        <button class="sureBtn">确认</button>
+        <button class="cancel">取消</button>
+    </div>
+    <!-- 状态提示框 -->
+    <section class="signOutShow"></section>
+    <!-- end 状态提示框-->
+</article>
+<script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="min-js/iconfont.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/forgetReset.js"></script>
+</body>
+</html>

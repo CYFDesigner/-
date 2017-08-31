@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5,maximum-scale=1.0,user-scalable=no"/>
+    <title>了解学业倾向</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/reportingExplain.css" />
+</head>
+<body>
+    <article class="content">
+        <div class="reportingTitle">了解学业倾向</div>
+        <div class="reportingImg">
+            <img src="images/学业倾向.jpg">
+        </div>
+        <div class="reportingText">
+            <p>选择正确的科目，为今后高考时的专业选择和未来的职业发展奠定良好的基础。</p>
+            <p>测试的要素主要包含思维方式，学科兴趣，学科倾向推荐专业三个方面。通过专业的题目设计，严谨的解释分析，能够为高中生的选科提供参考信息。选择正确的科目，为今后高考时的专业选择和未来的职业发展奠定良好的基础。</p>
+        </div>
+        <a class="reportingTest">开始测试</a>
+
+        <!-- 登陆验证 -->
+        <section class="loginBox">
+            <form class="login" method="post" action="" target="id_iframe">
+                <p class="loginTitle">升学百科</p>
+                <label for="mobilePhone">
+                    <input type="tel" placeholder="手机号码/准考证号" id="mobilePhone" class="mobilePhone" maxlength="15"/>
+                </label>
+                <label for="passWord">
+                    <input type="password" placeholder="密码" id="passWord" class="passWord"/>
+                </label>
+                <button class="loginBtn">登 录</button>
+                <a href="forgetPage.html" class="forgetLink">忘记密码</a>
+                <a href="registerPage.html" class="registerLink">注册</a>
+                <span class="closePage icon-guanbi- iconfont"></span>
+                <iframe id="id_iframe" name="id_iframe" style="display: none"></iframe>
+            </form>
+        </section>
+        <!-- end 登陆验证 -->
+
+        <!-- 状态提示框 -->
+        <section class="signOutShow"></section>
+        <!-- end 状态提示框-->
+    </article>
+    <script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/automaticLogin.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="min-js/iconfont.js"></script>
+    <script type="text/javascript" src="js/reportingExplain.js"></script>
+</body>
+</html>

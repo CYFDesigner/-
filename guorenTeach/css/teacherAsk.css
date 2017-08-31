@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/*老师信息*/
+.teacherInfo{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 31.1rem;
+    padding-bottom: 7.1rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+.head{
+    width: 10.8rem;
+    height: 10.8rem;
+    border-radius: 50%;
+    margin: 2.2rem auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.head img{
+    width: 100%;
+    height: auto;
+}
+.headVip::after{
+    content: "V";
+    box-sizing: border-box;
+    font-size: 2rem;
+    color: #fff;
+    font-style: italic;
+    text-align: left;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #ffc53a;
+    padding: 0.8rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.teacherName{
+    font-size: 2.8rem;
+    color: #1b1b1b;
+    text-align: center;
+    line-height: 3.1rem;
+    margin-top: 1.7rem;
+}
+.teacherIntroduce{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 5.5rem;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #939393;
+    line-height: 2.9rem;
+    margin-top: 1.8rem;
+    word-wrap : break-word;
+}
+.teacherLableBox{
+    display: block;
+    margin-top: 1.5rem;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+}
+.teacherLableBox li{
+    display: block;
+    float: left;
+    padding: 0 0.9rem;
+    line-height: 3.6rem;
+    font-size: 2.2rem;
+    color: #9d9d9d;
+    border: solid 0.1rem #9d9d9d;
+    border-radius: 0.4rem;
+    margin-right: 0.5rem;
+}
+.teacherLableBox li:last-child{margin-right: 0!important;}
+/*end 老师信息*/
+
+/*提问模块*/
+.teacherAsk{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 1.6rem;
+    padding: 0 3.5rem;
+    overflow: hidden;
+}
+.askInfo{
+    font-size: 2.2rem;
+    line-height: 3.7rem;
+    color: #2e2e2e;
+    margin-top: 5.7rem;
+    text-align: justify;
+    word-wrap: break-word;
+}
+.askBox{
+    box-sizing: border-box;
+    width: 57.3rem;
+    height: 22.3rem;
+    background-color: #fff;
+    border: solid 0.1rem #cacaca;
+    border-radius: 1rem;
+    margin-top: 3.6rem;
+    resize:none!important;
+    padding: 2.3rem 1.3rem;
+    font-size: 2.2rem;
+    color: #333333;
+    position: relative;
+    text-align: justify;
+    word-wrap: break-word;
+}
+.askBoxNumber{
+    display: block;
+    font-size: 2rem;
+    color: #959595;
+    overflow: hidden;
+    position: absolute;
+    right: 4.5rem;
+    margin-top: -4.3rem;
+}
+/*end 提问模块*/
+
+/*支付模块*/
+.payText{
+    width: 100%;
+    margin-top:6rem ;
+    text-align: center;
+    font-size: 2.6rem;
+}
+.payOld{
+    text-decoration: line-through;
+}
+.payNew{
+    color: red;
+}
+.payButton{
+    width: 100%;
+    height: 7.8rem;
+    background-color: #f57374;
+    text-align: center;
+    font-size: 3.2rem;
+    color: #fff;
+    border: 0;
+    border-radius: 0.4rem;
+    margin-top: 2.7rem;
+    margin-bottom: 13.1rem;
+}
+.payButton:active{
+    background-color: #BF3E3D!important;
+}
+/*end 支付模块*/

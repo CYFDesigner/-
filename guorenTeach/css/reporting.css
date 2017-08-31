@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.content{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 2.4rem;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+.reportingUl{
+    display: block;
+    width: 100%;
+    margin-top: 7rem;
+}
+.reportingUl li{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.reportingQuestion{
+    display: block;
+    width: 100%;
+    font-size: 2.8rem;
+    color: #333;
+    line-height: 3rem;
+}
+.reportingAnswer{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: solid 1px #d5d5d5;
+    border-radius: 1rem;
+    margin-top: 2.4rem;
+    overflow: hidden;
+}
+.reportingAnswer label{
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    min-height: 8rem;
+    padding: 1rem;
+    border-bottom: solid 1px #d5d5d5;
+    position: relative;
+    overflow: hidden;
+}
+.reportingAnswer label:last-child{
+    border-bottom: 0!important;
+}
+.labelActive{
+    color: #fff;
+    background-color: #f57374;
+}
+.reportingAnswer span{
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    padding:0 1.8rem;
+    text-align: left;
+    font-size: 2.6rem;
+    line-height: 3rem;
+}
+.reportingAnswer input{
+    display: none;
+    float: left;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    position: absolute;
+}
+.submit,.nextItem,.lastItem{
+    display: block;
+    float: right;
+    width: 45%;
+    height: 7.8rem;
+    margin-top: 1.4rem;
+    border-radius: 0.8rem;
+    border: solid 1px transparent;
+    background-color: #f57374;
+    color: #fff;
+    text-align: center;
+    line-height: 7.8rem;
+    font-size: 2.8rem;
+}
+.submit{display: none}
+.nextItem,.lastItem{
+    display: block;
+    float: left!important;
+    background-color: #f4cb5f;
+}
+.nextItem{float: right!important;}

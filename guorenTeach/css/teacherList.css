@@ -1,0 +1,216 @@
+@charset "UTF-8";
+body{
+    background-color: #f4f4f4!important;
+}
+/*筛选栏*/
+.screenTeacher{
+    width: 100%;
+    height: 15.2rem;
+    background-color: #fff;
+}
+.screenTeacher ul{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 15.2rem;
+    padding: 0 2.5rem;
+}
+.screenItem{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33.33%;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.screenIcon{
+    display: block;
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-bottom: 1.3rem;
+    color: #f85454;
+    font-size: 4.6rem!important;
+}
+.screenText{
+    display: block;
+    font-size: 2.4rem;
+    color: #232323;
+    text-align: center;
+}
+.screenTextActive{
+    color: #f85454!important;
+}
+/*end 筛选栏*/
+
+/*导师推荐*/
+.teacherListBox{margin-top: 1.4rem}
+.teacherList{
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+.teacherList>li{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 15.2rem;
+    padding: 0 2.5rem;
+    position: relative;
+    background-color: #fff;
+}
+.teacherList>li:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #dfdfdf;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.teacherList>li>a{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 15.2rem;
+    text-decoration: none!important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.teacherLeft{
+    box-sizing: border-box;
+    min-width: 9.4rem;
+    width: 9.4rem;
+    height: 9.4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.teacherLeft img{
+    width: 100%;
+    overflow: hidden;
+}
+.teacherRight{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 0 0 1.9rem;
+    overflow: hidden;
+}
+.teacherName{
+    font-size: 2.4rem;
+    color: #585858;
+    line-height: 2.2rem;
+}
+.teacherInfo{
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 2.2rem;
+    margin-top: 1.2rem;
+    font-size: 2.2rem;
+    color: #8e8e8e;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.teacherLable{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1.2rem;
+    margin-bottom: 1px;
+    padding-left: 1px;
+}
+.teacherLable li{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 2.9rem;
+    padding: 0 1.6rem;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+    border-radius: 0.3rem;
+    margin-right: 0.8rem;
+}
+.teacherChouse{
+    border: solid 1px #fec93e;
+    color:#fec93e;
+}
+.teacherCareer{
+    border: solid 1px #53e1ad;
+    color:#53e1ad;
+}
+.teacherArt{
+    border: solid 1px #f57374;
+    color:#f57374;
+}
+.teachertThree{
+    border: solid 1px #7e67f5;
+    color:#7E67F5;
+}
+.teacherStudy{
+    border: solid 1px #568af5;
+    color:#568af5;
+}
+.teacherLable li:last-child{
+    margin: 0!important;
+}
+/*end 导师推荐*/
+
+/*加载模块*/
+.loadBox{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 8.3rem;
+    background-color: #f4f4f4;
+    margin-bottom: 8.3rem;
+    position: relative;
+}
+.load{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -2.8rem 0 0 -7.7rem;
+}
+.loadIcon{
+    display: block;
+    float: left;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: solid 0.5rem #666;
+    border-top-color: transparent;
+    margin: 0.6rem;
+    animation: load 0.75s linear infinite;
+    -webkit-animation: load 0.75s linear infinite;
+    -o-animation: load 0.75s linear infinite;
+}
+@-webkit-keyframes load {
+    33%{transform:rotate(120deg)}
+    66%{transform:rotate(240deg)}
+    100%{transform:rotate(360deg)}
+}
+.loadText{
+    display: block;
+    float: left;
+    font-size: 2.8rem;
+    color: #666;
+    line-height: 5.7rem;
+    margin-left: 0.5rem;
+}
+/*end 加载模块*/

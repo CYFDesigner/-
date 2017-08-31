@@ -1,0 +1,244 @@
+@charset "UTF-8";
+*:not(input,textarea){
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: '微软雅黑'!important;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+html,body{
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    /*background-color: #f4f4f4;*/
+    background-color: #fff;
+}
+.pageAnimate{
+    display: block;
+    width: 400px;
+    height: 400px;
+    background: url("../images/小人奔跑-01.gif") no-repeat 0 0;
+    background-size: 400px auto;
+    position: fixed;
+    top: 50%;
+    left:50%;
+    margin: -200px 0 0 -200px;
+}
+.pageAnimate img{
+    display: block;
+    width: 100%;
+}
+.content{display: none;}
+input,button,textarea{
+    -webkit-appearance: none!important;
+    box-shadow: none!important;
+    font-family: '微软雅黑'!important;
+}
+.bodyHide{display: none}
+/*标签导航*/
+.lableNavBox{
+    box-sizing: border-box;
+    width: 100%;
+    height: 0.83rem;
+    border-top: solid 1px #aeaeae;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: -1px;
+    z-index: 998;
+}
+.lableNav{
+    box-sizing: border-box;
+    height: 0.83rem;
+    width: 100%!important;
+    overflow: hidden;
+}
+.lableNav li{
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 25%;
+    height: 0.83rem;
+    overflow: hidden;
+}
+.lableNav li a{
+    display: block;
+    width: 100%;
+    height: 0.82rem;
+    text-decoration: none!important;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.lableNavIcon{
+    display: block;
+    width: 0.41rem;
+    height: 0.41rem;
+    margin: 0.11rem auto 0.06rem auto;
+    font-size: 0.4rem;
+}
+.lableNavText{
+    display: block;
+    width: 100%;
+    line-height: 0.17rem;
+    font-size: 0.17rem;
+    color: #7f8388;
+    text-align: center;
+}
+.lableNavActive .lableNavIcon{color: #f95354}
+.lableNavActive .lableNavText{color: #f95354}
+/*end 标签导航*/
+
+
+/*登陆验证*/
+.loginBox{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 999;
+}
+.login{
+    box-sizing: border-box;
+    display: block;
+    width: 5.1rem;
+    height: 5.54rem;
+    padding: 0 0.4rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.55rem;
+    margin-top: -2.77rem;
+}
+.loginTitle{
+    display: block;
+    width: 100%;
+    margin-top: 0.56rem;
+    line-height:0.48rem;
+    font-size: 0.48rem;
+    text-align: center;
+    color: #f85454;
+    font-weight: bold;
+}
+.mobilePhone,.passWord{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 0.76rem;
+    padding:0.23rem 0 0.23rem 0.26rem;
+    margin-top: 0.49rem;
+    background-color: #fff;
+    border: solid 0.02rem #cecece;
+    border-radius: 0.08rem;
+    font-size: 0.26rem;
+    color: #9a9a9a;
+    line-height: normal;
+}
+.passWord{margin-top: 0.22rem}
+.loginBtn{
+    width: 100%;
+    height: 0.67rem;
+    margin-top: 0.22rem;
+    border: 0;
+    border-radius: 0.08rem;
+    background-color: #f85454;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+}
+.registerLink,.forgetLink{
+    display:block;
+    float: left;
+    font-size: 0.24rem;
+    color: #f85454;
+    line-height: 0.27rem;
+    margin-top: 0.23rem;
+    text-decoration: none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.forgetLink{
+    float: right!important;
+    color: #959595;
+}
+
+.closePage{
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    font-size: 0.4rem;
+    position: absolute;
+    right: 0.27rem;
+    top: 0.27rem;
+    color: #c6c4c4;
+}
+/*end 登陆验证*/
+
+/*提示模块*/
+.signOutShow{
+    box-sizing: border-box;
+    display: none;
+    height: 0.64rem;
+    padding: 0 0.2rem;
+    position: fixed;
+    bottom: 1.33rem;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    text-align: center;
+    line-height: 0.64rem;
+    font-size: 0.24rem;
+    overflow: hidden;
+    z-index: 999;
+}
+/*end 提示模块*/
+
+/*加载模块*/
+.loadBox{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 0.83rem;
+    background-color: #f4f4f4;
+    margin-bottom: 0.83rem;
+    position: relative;
+}
+.load{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.28rem 0 0 -0.77rem;
+}
+.loadIcon{
+    display: block;
+    float: left;
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    border: solid 0.05rem #666;
+    border-top-color: transparent;
+    margin: 0.06rem;
+    animation: load 0.75s linear infinite;
+    -webkit-animation: load 0.75s linear infinite;
+    -o-animation: load 0.75s linear infinite;
+}
+@-webkit-keyframes load {
+    33%{transform:rotate(120deg)}
+    66%{transform:rotate(240deg)}
+    100%{transform:rotate(360deg)}
+}
+.loadText{
+    display: block;
+    float: left;
+    font-size: 0.28rem;
+    color: #666;
+    line-height: 0.57rem;
+    margin-left: 0.05rem;
+}
+/*end 加载模块*/

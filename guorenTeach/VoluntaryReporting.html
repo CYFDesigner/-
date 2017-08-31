@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+    <title>志愿填报</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/VoluntaryReporting.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+<article class="content" style="min-height: 100%">
+    <!-- 个人信息 -->
+    <section class="userInfo">
+        <!-- 筛选个人信息 -->
+        <ul class="screenUl">
+            <li>
+                <span class="iconfont icon-diqu iconSpan"></span>
+                <span class="screenBtnTitle">地区</span>
+                <span class="screenBtnValue"></span>
+                <span class="iconfont icon-xiangshang- iconShow"></span>
+            </li>
+            <li>
+                <span class="iconfont icon-keshu iconSpan"></span>
+                <span class="screenBtnTitle">科属</span>
+                <span class="screenBtnValue"></span>
+                <span class="iconfont icon-xiangshang- iconShow"></span>
+            </li>
+            <!--<li>-->
+                <!--<span class="iconfont icon-pici iconSpan"></span>-->
+                <!--<span class="screenBtnTitle">批次</span>-->
+                <!--<span class="screenBtnValue"></span>-->
+                <!--<span class="iconfont icon-xiangshang- iconShow"></span>-->
+            <!--</li>-->
+        </ul>
+        <!-- end 筛选个人信息 -->
+
+        <!-- 输入个人信息 -->
+        <ul class="inputInfo">
+            <li>
+                <span class="iconfont icon-weici iconSpan"></span>
+                <span class="inputTitle">位次</span>
+                <span class="input">名</span>
+                <label class="inputLable" for="ranking">
+                    <input type="number" placeholder="位次" id="ranking" onKeyPress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+                </label>
+            </li>
+            <li>
+                <span class="iconfont icon-fenshu iconSpan"></span>
+                <span class="inputTitle">分数</span>
+                <span class="input">分</span>
+                <label class="inputLable" for="number">
+                    <input type="number" placeholder="分数" id="number" max="750" maxlength="3" onKeyPress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+                </label>
+            </li>
+        </ul>
+        <!-- end 输入个人信息 -->
+    </section>
+    <!-- end 个人信息 -->
+
+    <!-- 查询通道 -->
+    <section class="searchPassageway">
+        <a>
+            <span class="textSpan">查询</span>
+        </a>
+    </section>
+    <!-- end 查询通道 -->
+
+    <!-- 免责声明 -->
+    <section class="disclaimer">
+        <div class="disclaimerBtn">
+            <span class="disclaimerBtnText">免责声明</span>
+            <span class="disclaimerBtnIcon">?</span>
+        </div>
+        <div class="disclaimerPage">
+            <div class="disclaimerPageTitle">志愿填报免责声明</div>
+            <p class="disclaimerPageContent">
+                1、本系统依据历年院校录取数据提供高考志愿的推荐功能，不等同于真实的教育考试院官方高考志愿填报。<br /><br />
+                2、用户使用本系统填写相关信息后，本系统仅为用户做出基于历年数据的独立参考建议。本系统所出具的结果并不构成对于用户填报志愿的最终确认、保证或承诺。<br /><br />
+                3、用户针对自身情况最终所作的任何与填报志愿有关的决定均只能被理解为是基于用户自己的独立判断而非本系统作出。<br /><br />
+                4、本系统所提供及依据的历年院校录取数据均来源于官方已公布的数据。本系统并不对此类数据的完整性、准确性、及时性承担负责。<br /><br />
+                5、本系统中的志愿梯次指数并非官方数据，是本系统自主研发的一种填报参考方法，仅供用户参考使用。<br /><br />
+                6、在正式志愿填报时的院校招生专业和计划等内容，以广东省教育考试院公布的为准，本系统对此并不承担任何责任。<br /><br />
+            </p>
+        </div>
+    </section>
+    <!-- end 免责声明-->
+
+    <section style="width:100%;opacity: 0.6;margin-top: 10rem">
+        <div class="tipTitle" style="text-align: center;font-size: 2.8rem;color: #333;">模拟填报志愿</div>
+        <div class="tipContent" style="text-align: center;font-size: 2.4rem;color: #333;margin-top: 2rem;line-height: 2.6rem;">
+            大学录取分数线显示16年数据<br />
+            专业录取分数线显示15年数据
+        </div>
+    </section>
+
+    <!-- 筛选内容 -->
+    <section class="screenBox">
+        <ul class="screenLinkBox">
+
+        </ul>
+        <button class="closeScreen">取消</button>
+    </section>
+    <!-- end 筛选内容 -->
+
+    <!-- 登陆验证 -->
+    <section class="loginBox">
+        <form class="login" method="post" target="id_iframe" onsubmit="return false;">
+            <p class="loginTitle">升学百科</p>
+            <label for="mobilePhone">
+                <input type="tel" placeholder="手机号码/准考证号" id="mobilePhone" class="mobilePhone" maxlength="15"/>
+            </label>
+            <label for="passWord">
+                <input type="password" placeholder="密码" id="passWord" class="passWord"/>
+            </label>
+            <button class="loginBtn">登 录</button>
+            <a href="forgetPage.html" class="forgetLink">忘记密码</a>
+            <a href="registerPage.html" class="registerLink">注册</a>
+            <span class="closePage icon-guanbi- iconfont"></span>
+            <iframe id="id_iframe" name="id_iframe" style="display: none"></iframe>
+        </form>
+    </section>
+    <!-- end 登陆验证 -->
+
+    <!-- 状态提示框 -->
+    <section class="signOutShow"></section>
+    <!-- end 状态提示框-->
+</article>
+<script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="min-js/iconfont.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/VoluntaryReporting.js"></script>
+</body>
+</html>

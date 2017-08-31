@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+    <title>测评结果</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/reportingResult.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+    <article class="content">
+        <!--导航-->
+        <nav class="navBox">
+            <ul class="navUl">
+                <li class="navActive">自身性格</li>
+                <li>自身天赋</li>
+                <li>职业倾向</li>
+                <li>专业倾向</li>
+            </ul>
+        </nav>
+        <!--end 导航-->
+
+        <!--页面内容-->
+        <section class="pageContent">
+            <section class="characterContent">
+                <div class="characterBox">
+                    <div class="characterOne"></div>
+                    <div class="characterTwo"></div>
+                    <div class="characterThree"></div>
+                    <div class="characterFour"></div>
+                </div>
+                <div class="pieBox">
+                    <div class="pieChartBox" id="container"></div>
+                    <div class="pieChartExplain">
+                        <div class="oneExplain">
+                            <span class="iconExplain"></span>
+                            <span class="numberExplain"></span>
+                        </div>
+                        <div class="twoExplain">
+                            <span class="iconExplain"></span>
+                            <span class="numberExplain"></span>
+                        </div>
+                        <div class="threeExplain">
+                            <span class="iconExplain"></span>
+                            <span class="numberExplain"></span>
+                        </div>
+                        <div class="fourExplain">
+                            <span class="iconExplain"></span>
+                            <span class="numberExplain"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="resultAnalysisTitle">
+                    <span class="iconfont icon-xiangguanzhuanye- iconSpan"></span>
+                    <span class="iconText">结果分析</span>
+                </div>
+                <div class="resultBox">
+                    <div class="result characterResult">
+                        <div class="oneCharacterBox characterTitleBox">
+                            <div class="oneCharacter"></div>
+                        </div>
+                        <div class="oneCharacterExplain resultExplain">
+                            <p class="oneCharacterExplainContent resultCont"></p>
+                        </div>
+
+                        <div class="twoCharacterBox characterTitleBox">
+                            <div class="twoCharacter"></div>
+                        </div>
+                        <div class="twoCharacterExplain resultExplain">
+                            <p class="twoCharacterExplainContent resultCont"></p>
+                        </div>
+
+                        <div class="threeCharacterBox characterTitleBox">
+                            <div class="threeCharacter"></div>
+                        </div>
+                        <div class="threeCharacterExplain resultExplain">
+                            <p class="threeCharacterExplainContent resultCont"></p>
+                        </div>
+
+                        <div class="fourCharacterBox characterTitleBox">
+                            <div class="fourCharacter"></div>
+                        </div>
+                        <div class="fourCharacterExplain resultExplain">
+                            <p class="fourCharacterExplainContent resultCont"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="talentContent">
+                <div class="talentBox">
+                    <div class="talentOne"></div>
+                    <div class="talentTwo"></div>
+                    <div class="talentThree"></div>
+                    <div class="talentFour"></div>
+                </div>
+
+                <div class="histogramBox">
+                    <div class="histogramTitleBox">
+                        <div class="oneHistogramText"></div>
+                        <div class="twoHistogramText"></div>
+                        <div class="threeHistogramText"></div>
+                        <div class="fourHistogramText"></div>
+                        <div class="fiveHistogramText"></div>
+                        <div class="sixHistogramText"></div>
+                        <div class="sevenHistogramText"></div>
+                        <div class="eightHistogramText"></div>
+                    </div>
+                    <div class="histogramImgBox">
+                        <div>
+                            <div class="oneHistogramImg">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="twoHistogramImg">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="threeHistogramImg">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="fourHistogramImg">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="fiveHistogramImg">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sixHistogramImg">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sevenHistogramImg">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="eightHistogramImg">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="histogramNumberBox">
+                        <div class="oneHistogramNumber"></div>
+                        <div class="twoHistogramNumber"></div>
+                        <div class="threeHistogramNumber"></div>
+                        <div class="fourHistogramNumber"></div>
+                        <div class="fiveHistogramNumber"></div>
+                        <div class="sixHistogramNumber"></div>
+                        <div class="sevenHistogramNumber"></div>
+                        <div class="eightHistogramNumber"></div>
+                    </div>
+                </div>
+                <div class="resultAnalysisTitle">
+                    <span class="iconfont icon-xiangguanzhuanye- iconSpan"></span>
+                    <span class="iconText">结果分析</span>
+                </div>
+                <div class="resultBox">
+                    <div class="result talentResult">
+                        <div class="oneTalentExplain resultExplain">
+                            <div class="TalentExplainContent1 resultCont"></div>
+                        </div>
+
+                        <div class="twoTalentExplain resultExplain">
+                            <div class="TalentExplainContent2 resultCont"></div>
+                        </div>
+
+                        <div class="threeTalentExplain resultExplain">
+                            <div class="TalentExplainContent3 resultCont"></div>
+                        </div>
+
+                        <div class="fourTalentExplain resultExplain">
+                            <div class="TalentExplainContent4 resultCont"></div>
+                        </div>
+
+                        <div class="fourTalentExplain resultExplain">
+                            <div class="TalentExplainContent5 resultCont"></div>
+                        </div>
+
+                        <div class="fourTalentExplain resultExplain">
+                            <div class="TalentExplainContent6 resultCont"></div>
+                        </div>
+
+                        <div class="fourTalentExplain resultExplain">
+                            <div class="TalentExplainContent7 resultCont"></div>
+                        </div>
+
+                        <div class="fourTalentExplain resultExplain">
+                            <div class="TalentExplainContent8 resultCont"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="occupationContent">
+                <div class="proportionImgBox">
+                    <div class="leftImgBox">
+                        <div class="occupationLeftRight">
+                            <div class="occupationLeftImg1">
+                                <div></div>
+                            </div>
+                            <div class="occupationLeftImg2">
+                                <div></div>
+                            </div>
+                            <div class="occupationLeftImg3">
+                                <div></div>
+                            </div>
+                            <div class="occupationLeftImg4">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="occupationLeftLeft">
+                            <div class="occupationLeftText1">外向</div>
+                            <div class="occupationLeftText2">感知</div>
+                            <div class="occupationLeftText3">理性</div>
+                            <div class="occupationLeftText4">决断</div>
+                        </div>
+                    </div>
+                    <div class="rightImgBox">
+                        <div class="occupationRightLeft">
+                            <div class="occupationRightImg1">
+                                <div></div>
+                            </div>
+                            <div class="occupationRightImg2">
+                                <div></div>
+                            </div>
+                            <div class="occupationRightImg3">
+                                <div></div>
+                            </div>
+                            <div class="occupationRightImg4">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="occupationRightRight">
+                            <div class="occupationRightText1">内向</div>
+                            <div class="occupationRightText2">直觉</div>
+                            <div class="occupationRightText3">感性</div>
+                            <div class="occupationRightText4">熟思</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ImgExplain">
+                    <div class="lineBox">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                        <div class="line4"></div>
+                        <div class="line5"></div>
+                        <div class="line6"></div>
+                        <div class="line7"></div>
+                        <div class="line8"></div>
+                    </div>
+                    <div class="ImgExplainTextBox">
+                        <div class="ImgExplainText1">强</div>
+                        <div class="ImgExplainText2">明显</div>
+                        <div class="ImgExplainText3">中等</div>
+                        <div class="ImgExplainText4">轻微</div>
+                        <div class="ImgExplainText5">中等</div>
+                        <div class="ImgExplainText6">明显</div>
+                        <div class="ImgExplainText7">强</div>
+                    </div>
+                </div>
+                <div class="resultAnalysisTitle">
+                    <span class="iconfont icon-xiangguanzhuanye- iconSpan"></span>
+                    <span class="iconText">结果分析</span>
+                </div>
+                <div class="resultBox">
+                    <div class="result">
+                        <div class="oneOccupationExplain resultExplain">
+                            <div class="occupationExplainTitle1 resultTitle">倾向类型</div>
+                            <div class="occupationExplainContent1 resultCont2"></div>
+                        </div>
+
+                        <div class="twoOccupationExplain resultExplain">
+                            <div class="occupationExplainContent2 resultCont">
+
+                            </div>
+                        </div>
+
+                        <div class="threeOccupationExplain resultExplain">
+                            <div class="occupationExplainTitle3 resultTitle">职业倾向</div>
+                            <div class="occupationExplainContent3 resultCont2"></div>
+                        </div>
+
+                        <div class="threeOccupationExplain resultExplain">
+                            <div class="occupationExplainTitle4 resultTitle">专业推荐</div>
+                            <div class="occupationExplainContent4 resultCont2"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="academicContent">
+                <div class="subjectInterest">
+                    <span></span>
+                </div>
+                <div class="radarMap" id="radarImg"></div>
+                <div class="resultAnalysisTitle">
+                    <span class="iconfont icon-xiangguanzhuanye- iconSpan"></span>
+                    <span class="iconText">结果分析</span>
+                </div>
+                <div class="resultBox">
+                    <div class="result">
+                        <div class="academicExplain1 resultExplain">
+                            <div class="academicExplainTitle1 resultTitle">6选3科目推荐：</div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--end 页面内容-->
+
+        <!-- 状态提示框 -->
+        <section class="signOutShow"></section>
+        <!-- end 状态提示框-->
+    </article>
+    <script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="min-js/highcharts.js"></script>
+    <script type="text/javascript" src="min-js/iconfont.js"></script>
+    <script type="text/javascript" src="min-js/highcharts-more.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="js/reportingResult.js"></script>
+</body>
+</html>

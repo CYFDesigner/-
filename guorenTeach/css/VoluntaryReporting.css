@@ -1,0 +1,266 @@
+@charset "UTF-8";
+.content{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+/*个人信息*/
+.userInfo,.inputInfo{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.screenUl li,.inputInfo li{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 10.4rem;
+    padding: 0 2.4rem;
+    background-color: #fff;
+    border-bottom: solid 1px #dcdcdc;
+    overflow: hidden;
+    position: relative;
+}
+.iconSpan{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    color: #229ce2;
+    position: absolute;
+    top: 50%;
+    left: 2.4rem;
+    margin-top: -2rem;
+}
+.icon-keshu{color: #f76626}
+.icon-pici{color: #3f89e4}
+.screenBtnTitle,.inputTitle{
+    display: block;
+    float: left;
+    font-size: 2.6rem;
+    line-height: 10.3rem;
+    color: #333;
+    margin-left: 7rem;
+}
+.screenBtnValue,.inputValue{
+    display: block;
+    float: right;
+    text-align: right;
+    line-height: 10.3rem;
+    font-size: 2.6rem;
+    color: #c9c9c9;
+    margin-right: 6rem;
+}
+.iconShow{
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+    color: #c9c9c9;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    right: 2.4rem;
+    margin-top: -1.5rem;
+}
+
+.inputInfo{
+    margin-top: 1rem;
+    border-top: solid 1px #dcdcdc;
+}
+.input{
+    display: block;
+    float: right;
+    font-size: 2rem;
+    color: #d5d5d5;
+    line-height: 10.3rem;
+    margin-right: 1rem;
+}
+.inputLable{
+    box-sizing: border-box;
+    display: block;
+    float: right;
+    width: 20.4rem;
+    height: 6rem;
+    border: solid 2px #e6e6e6;
+    border-radius: 1rem;
+    position: absolute;
+    right: 6.2rem;
+    top: 50%;
+    margin-top: -3rem;
+    overflow: hidden;
+}
+#ranking,#number{
+    box-sizing: border-box;
+    border: 0;
+    width: 20rem;
+    height: 5.8rem;
+    text-align: center;
+    font-size: 3rem;
+    color: #333333;
+    line-height: normal;
+}
+.icon-weici{color: #e12a00}
+.icon-fenshu{color: #ffc300}
+/*end 个人信息*/
+
+/*查询通道*/
+.searchPassageway{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2.6rem;
+}
+.searchPassageway a{
+    box-sizing: border-box;
+    display: block;
+    width: 54.6rem;
+    height: 9.4rem;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 0.8rem;
+    text-align: center;
+    position: relative;
+}
+.searchPassageway a:nth-child(1){background-color: #f76626;}
+.searchPassageway a:nth-child(2){background-color: #229ce2;}
+.searchPassageway a:nth-child(3){background-color: #0c70c5;}
+.textSpan{
+    font-size: 2.8rem;
+    color: #fff;
+    line-height: 9.4rem;
+}
+.textNumber{
+    font-size: 2rem;
+    color: #fff;
+    margin-right: -2rem;
+}
+.textNumber small{
+    font-size: 2rem;
+}
+/*end 查询通道*/
+
+/*筛选列表*/
+.screenBox{
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 1.7rem;
+    background-color: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.screenLinkBox{
+    box-sizing: border-box;
+    display: block;
+    width: 60rem;
+    max-height: 60%;
+    border-radius: 2.2rem;
+    position: absolute;
+    bottom: 15.8rem;
+    background-color: #fff;
+    left: 50%;
+    margin-left: -30rem;
+    overflow: scroll;
+    overflow-scrolling: touch;
+}
+.screenLinkBox li{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 10rem;
+    border-bottom:solid 1px #cecece;
+    background-color: #fff;
+    font-size: 3.2rem;
+    text-align: center;
+    line-height: 9.9rem;
+    color: #333333;
+}
+.screenLinkActive{
+    background-color: #f85454!important;
+    color: #fff!important;
+}
+.closeScreen{
+    box-sizing: border-box;
+    width: 60rem;
+    height: 10rem;
+    border: 0;
+    border-radius: 2.2rem;
+    background-color: #fff;
+    font-size: 3.2rem;
+    text-align: center;
+    line-height: normal;
+    color: #333333;
+    position: absolute;
+    bottom: 2.8rem;
+    left: 50%;
+    margin-left: -30rem;
+}
+/*end 筛选列表*/
+
+/*志愿填报参考说明*/
+.disclaimer{
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+}
+.disclaimerBtn{
+    display: block;
+    width: 100%;
+    height: 6rem;
+    font-size: 2rem;
+    position: relative;
+}
+.disclaimerBtnText{
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    line-height: 6rem;
+    color: #828282;
+    font-weight: bold;
+}
+.disclaimerBtnIcon{
+    display: block;
+    float: left;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin-left: -62%;
+    margin-top: 1.7rem;
+    background-color: #828282;
+    color: #FBFFAD;
+    text-align: center;
+    border-radius: 50%;
+}
+.disclaimerPage{
+    box-sizing: border-box;
+    display: none;
+    padding: 2.5rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.disclaimerPageTitle{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+.disclaimerPageContent{
+    font-size: 2.2rem;
+    color: #fff;
+    text-align: justify;
+    line-height: 3rem;
+    margin-top: 3rem;
+}
+/*end 志愿填报参考说明*/

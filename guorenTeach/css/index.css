@@ -1,0 +1,487 @@
+@charset "UTF-8";
+.content{
+    background-color: #f4f4f4;
+}
+/*banner*/
+.bannerBox{
+    width: 100%;
+    max-height: 2.4rem;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.banner{
+    max-height: 2.4rem;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top:0;
+}
+.banner li{
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.banner li img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: -0.02rem;
+}
+.bannerSpan{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 0.26rem;
+    bottom: 0.12rem;
+}
+.bannerSpan li{
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 0.12rem;
+    height: 0.12rem;
+    border: solid 1px rgba(0,0,0,.1);
+    border-radius: 0.06rem;
+    margin:0 0.04rem;
+}
+.bannerSpan .bannerSpanActive{background-color: #ff5758;}
+/*end banner*/
+
+/*导航部分*/
+.navBox{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0 0.13rem;
+    margin-top: 0.15rem;
+}
+.navUl{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.firstNav{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+}
+.firstNav li{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 1.32rem;
+    padding: 0.16rem 0.3rem;
+    position: relative;
+}
+.firstNav li a{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 1rem;
+    padding: 0.18rem 0.19rem;
+    border-radius: 0.08rem;
+    position: relative;
+}
+.firstNav li:first-child a{
+    background:#62cf62 url("../images/专业选考.png") no-repeat top left ;
+    background-size: auto 100%;
+}
+.firstNav li:last-child a{
+    background:#ffb93d url("../images/科目选考.png") no-repeat top left ;
+    background-size: auto 100%;
+}
+.navText{
+    font-size: 0.23rem;
+    color: #343434;
+}
+.firstNav li .navText{color: #fff;}
+.nav{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    position: relative;
+}
+.nav li{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 1.87rem;
+    position: relative;
+}
+.nav li a{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.87rem;
+}
+.iconBox{
+    display: block;
+    position: relative;
+}
+.nav li .navIcon{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1.06rem;
+    height: 1.06rem;
+    padding: 0.05rem;
+    overflow-x: visible!important;
+    overflow-y: visible!important;
+}
+.nav li:nth-child(1) .navIcon,.nav li:nth-child(2) .navIcon{
+    padding: 0!important;
+}
+.nav .navText{
+    line-height: 0.22rem!important;
+    margin-top: 0.17rem;
+}
+.HotNav .iconBox:before{
+    content: "HOT";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 0.38rem;
+    height: 0.21rem;
+    font-size: 0.13rem;
+    color: #fff;
+    border-radius: 0.1rem;
+    background-color: #f95354;
+    text-align: center;
+    position: absolute;
+    right: -0.09rem;
+    top: -0.04rem;
+    z-index: 999;
+}
+/*end 导航部分*/
+
+/*今日头条*/
+.newsBox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 7.7rem;
+    padding: 0 2.5rem;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.newsIcon{
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+}
+.newsListBox{
+    box-sizing: border-box;
+    width: 100%;
+    height: 7.7rem;
+    float: left;
+    overflow: hidden;
+}
+.news{
+    width: 100%;
+    overflow: hidden;
+}
+.news li{
+    display: block;
+    padding-left: 2.2rem;
+    padding-right: 2rem;
+}
+.news li a{
+    display: block;
+    width: 100%;
+    font-size: 2.1rem;
+    line-height: 7.7rem;
+    color: #4e4e4e;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    text-decoration: none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+/*end 今日头条*/
+
+/*直播通道*/
+.videoThrough{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1.6rem;
+}
+.videoThrough a{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.videoThrough a img{
+    display: block;
+    width: 100%;
+    margin-bottom: -3px;
+}
+/*end 直播通道*/
+
+/*生涯规划*/
+.careerPlan{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-top: 1.7rem;
+}
+.careerTitle{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 8.6rem;
+    padding: 0 2.5rem;
+    border-bottom: solid 1px #dfdfdf;
+    background-color: #fff;
+}
+.titleIcon{
+    display: block;
+    width: 3.1rem;
+    height: 3.1rem;
+}
+.titleText{
+    font-size: 2.6rem;
+    color: #333333;
+    margin-left: 1.7rem;
+}
+.careerPlanUl{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.careerPlanUl li{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 8.5rem;
+    padding: 0 0 0 2.5rem;
+    background-color: #fff;
+}
+.careerPlanUl li:first-child{border-bottom: solid 1px #dfdfdf}
+.careerPlanUl li p{
+    width: 100%;
+    font-size: 2.4rem;
+    color: #333333;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.careerIcon{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 4.1rem;
+    height: 2.8rem;
+    padding-right: 2.5rem;
+    font-size: 2.8rem;
+    color: #bebebe;
+}
+.careerIcon:before{transform: rotate(-90deg)}
+/*end 生涯规划*/
+
+/*导师推荐*/
+.teacherBox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin-top: 1.6rem;
+    margin-bottom: 8.6rem;
+}
+.teacherTitle{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 10rem;
+}
+.teacherTitleIcon{
+    display: block;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+.teacherTitleText{
+    display: block;
+    font-size: 6rem;
+    margin-top: 0.9rem;
+    color:#464545;
+}
+.teacherList{
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.teacherList:before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #dfdfdf;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.teacherList>li{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 15.2rem;
+    position: relative;
+}
+.teacherList>li:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #dfdfdf;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.teacherList>li>a{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 15.2rem;
+    padding: 0 2.5rem 0 1rem;
+    text-decoration: none!important;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.teacherLeft{
+    box-sizing: border-box;
+    min-width: 9.4rem;
+    width: 9.4rem;
+    height: 9.4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.teacherLeft img{
+    width: 100%;
+    overflow: hidden;
+}
+.teacherRight{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 0 0 1.9rem;
+    overflow: hidden;
+}
+.teacherName{
+    font-size: 2.4rem;
+    color: #585858;
+    line-height: 2.2rem;
+}
+.teacherInfo{
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 2.2rem;
+    margin-top: 1.2rem;
+    font-size: 2.2rem;
+    color: #8e8e8e;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.teacherLable{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1.2rem;
+    margin-bottom: 1px;
+    padding-left: 1px;
+}
+.teacherLable li{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 2.9rem;
+    padding: 0 1.6rem;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+    border-radius: 0.3rem;
+    margin-right: 0.8rem;
+}
+.teacherChouse{
+    border: solid 1px #fec93e;
+    color:#fec93e;
+}
+.teacherCareer{
+    border: solid 1px #53e1ad;
+    color:#53e1ad;
+}
+.teacherArt{
+    border: solid 1px #f57374;
+    color:#f57374;
+}
+.teachertThree{
+    border: solid 1px #7e67f5;
+    color:#7E67F5;
+}
+.teacherStudy{
+    border: solid 1px #568af5;
+    color:#568af5;
+}
+.teacherLable li:last-child{
+    margin: 0!important;
+}
+/*end 导师推荐*/
+

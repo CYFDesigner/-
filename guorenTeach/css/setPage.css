@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.setList li{
+    box-sizing: border-box;
+    width: 100%;
+    height: 8.6rem;
+    padding: 0 3.4rem;
+    background-color: #fff;
+    border-bottom: solid 0.2rem #cecece;
+}
+.setList li{
+    box-sizing: border-box;
+    width: 100%;
+    height: 8.7rem;
+    padding: 0 3.4rem;
+    background-color: #fff;
+    border-bottom: solid 0.08rem #dfdfdf;
+}
+.setList li a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.setText{
+    display: block;
+    float: left;
+    font-size: 2.6rem;
+    color: #303030;
+    line-height: 8.4rem;
+}
+.setTextIcon{
+    display: block;
+    float: right;
+    width: 2.6rem;
+    height: 2.6rem;
+    color: #9e9e9e;
+    margin-top: 3.2rem;
+    font-size: 2.6rem;
+    transform: rotate(-90deg);
+}
+.signOut{
+    display: block;
+    width: 57rem;
+    height: 6.7rem;
+    margin: 3.4rem auto 0 auto;
+    background-color: #f85454;
+    border: 0;
+    border-radius: 0.6rem;
+    font-size: 3.2rem;
+    color: #fff;
+}
+

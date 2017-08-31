@@ -1,0 +1,264 @@
+@charset "UTF-8";
+html,body,.content{
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+}
+/*选考科目头部*/
+.subjectChouse{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 8.8rem;
+    border-bottom: solid 1px #e3e3e3;
+    background-color: #fff;
+}
+.subjectChouseTitle{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 0 0 0 3.8rem;
+    line-height: 8.8rem;
+    font-size: 2.4rem;
+    color: #333333;
+}
+.subjectChouseScreenBtn{
+    display: block;
+    width: 13rem;
+    height: 8.8rem;
+    float: left;
+    margin-left: -13rem;
+    font-size: 2.4rem;
+    color: #333333;
+    position: relative;
+}
+.screenBtnText{
+    font-size: 2.4rem;
+    line-height: 8.8rem;
+    padding-left: 2.5rem;
+    margin-top: -1rem;
+}
+.subjectChouseScreenBtn .iconSpan{
+    padding-left: 0.5rem;
+    font-size: 2.4rem;
+    line-height: 8.8rem;
+}
+.subjectChouseScreenBtn:before{
+    content: '';
+    width: 1px;
+    height: 6.7rem;
+    background-color: #e3e3e3;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+}
+/*end 选考科目头部*/
+
+/*大学列表*/
+.universityListBox{width: 100%;}
+.universityList{width: 100%;}
+.universityList>li{
+    box-sizing: border-box;
+    width: 100%;
+    height: 14.8rem;
+    padding: 2.5rem;
+    border-bottom: solid 0.1rem #e6e6e6;
+    background-color: #ffffff;
+    margin-top: 0.05rem;
+}
+.universityLeft{
+    float: left;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-left: -100%;
+    overflow: hidden;
+}
+.universityLeft img{
+    width: 100%;
+    height: 100%;
+}
+.universityRight{
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    padding-left: 11.8rem
+}
+.universityInfo{
+    width: 100%;
+    float: left;
+    padding-bottom: 0.4rem;
+}
+.universityName{
+    width: 100%;
+    margin-top: 1.6rem;
+    font-size: 2.8rem;
+    color: #333;
+    line-height: 3rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.universityOther{
+    width: 100%;
+    margin-top: 2.4rem;
+    padding: 0;
+    overflow: hidden;
+}
+.universityOther>li{
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin-right: 1.8rem;
+    background-color: #ffffff;
+}
+.locationIcon{
+    display: block;
+    float: left;
+    width: 2.2rem;
+    height: 2.4rem;
+    font-size: 1.9rem!important;
+    padding-top: 0.1rem;
+    margin-top: -0.2rem;
+    margin-right: 0.2rem;
+}
+.locationText{
+    display: block;
+    float: left;
+    font-size: 2.047rem;
+    line-height: 2.1rem;
+    color: #999999;
+    margin-left: 0.2rem;
+}
+.loadBox{margin-bottom: 0!important;}
+/*end 大学列表*/
+
+/*筛选页*/
+.screenPage{
+    box-sizing: border-box;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 10.75rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    background-color: rgba(0,0,0,.8);
+    overflow: hidden;
+}
+.screenPageBox{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+}
+.screenHeader{
+    width: 100%;
+    height: 6rem;
+    background-color: #f4f4f4;
+    color: #9b9b9b;
+    font-size: 2.4rem;
+    line-height: 6rem;
+    padding-left: 3.5rem;
+}
+.screenContent{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 3.5rem 21rem 3.5rem;
+    background-color: #fff;
+}
+.screenTitleBox{
+    width: 100%;
+    margin-top: 3.9rem;
+    line-height: 2.4rem;
+    overflow: hidden;
+}
+.screenTitle{
+    display:block;
+    float: left;
+    font-size: 2.4rem;
+    color: #3c3c3c;
+}
+.screenTitleIcon{
+    display: block;
+    float: right;
+    width: 1.9rem;
+    height: 1.9rem;
+}
+.screenBox0,.screenBox1,.screenBox2,.screenBox3,.screenBox4{
+    width: 100%;
+    margin-top: 2.2rem;
+    overflow: hidden;
+    max-height: 100%;
+}
+.screenBox0 li,.screenBox1 li,.screenBox2 li,.screenBox3 li,.screenBox4 li{
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 10rem;
+    height: 5.2rem;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 5.2rem;
+    font-size: 2rem;
+    color: #3c3c3c;
+    margin:0.7rem 0.85rem 0.7rem 0;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.screenBox0 li input,.screenBox1 li input,.screenBox2 li input,.screenBox3 li input,.screenBox4 li input{
+    display: none!important;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.screenBtnBox{
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 10.75rem;
+    position: fixed;
+    bottom: -0.1rem;
+    left: 0;
+    overflow: hidden;
+}
+.screenBtn{
+    width: 100%;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+.screenReset{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 8.9rem;
+    background-color: #f4f4f4;
+    font-size: 2.6rem;
+    color: #a8a8a8;
+    border: 0;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.screenSure{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 8.9rem;
+    background-color: #f85454;
+    font-size: 2.6rem;
+    color: #fff;
+    border: 0;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.screenInputCheck{
+    color: #f85454!important;
+    background-color: #ffdada!important;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+/*end 筛选页*/

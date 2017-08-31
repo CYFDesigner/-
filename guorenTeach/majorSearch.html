@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+    <title>专业</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/majorSearch.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+<article class="content">
+    <!-- 搜索框 -->
+    <form method="post" class="searchBox" id="searchBox" target="iframe" onsubmit="return false">
+        <div class="logoBox"></div>
+        <label for="searchInput" class="searchLable">
+            <span class="iconfont icon-sousuo iconSpan"></span>
+            <input type="search" class="searchInput" id="searchInput" name="searchInput" placeholder="输入您想要搜索的专业"/>
+            <a class="searchBtn">搜索</a>
+        </label>
+    </form>
+    <iframe id="iframe" name="id_iframe" style="display: none"></iframe>
+    <!-- end 搜索框 -->
+
+    <!-- 专业列表 -->
+    <section class="majorSearchList">
+        <ul class="majorSearchUl">
+
+        </ul>
+    </section>
+    <!-- end 专业列表 -->
+
+    <!-- 登陆验证 -->
+    <section class="loginBox">
+        <form class="login" method="post" action="" target="id_iframe">
+            <p class="loginTitle">升学百科</p>
+            <label for="mobilePhone">
+                <input type="tel" placeholder="手机号码/准考证号" id="mobilePhone" class="mobilePhone" maxlength="15"/>
+            </label>
+            <label for="passWord">
+                <input type="password" placeholder="密码" id="passWord" class="passWord"/>
+            </label>
+            <button class="loginBtn">登 录</button>
+            <a href="forgetPage.html" class="forgetLink">忘记密码</a>
+            <a href="registerPage.html" class="registerLink">注册</a>
+            <span class="closePage icon-guanbi- iconfont"></span>
+            <iframe id="id_iframe" name="id_iframe" style="display: none"></iframe>
+        </form>
+    </section>
+    <!-- end 登陆验证 -->
+
+    <!-- 页面提示框 -->
+    <section class="signOutShow"></section>
+    <!-- end 页面提示框-->
+</article>
+<script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="min-js/iconfont.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/majorSearch.js"></script>
+</body>
+</html>

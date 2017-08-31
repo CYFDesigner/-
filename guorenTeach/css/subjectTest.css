@@ -1,0 +1,123 @@
+@charset "UTF-8";
+html,body,.content{
+    width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+}
+/*小贴士*/
+.pageTip{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 8.6rem;
+    padding: 0 2.5rem;
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.pageTip .tipText{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    float: left;
+    padding-left: 4.5rem;
+    font-size: 2.6rem;
+    color: #333;
+    line-height: 8.6rem;
+}
+.tipText small{
+    font-size: 2rem;
+    color: #cdcdcd;
+    margin-left: 1rem;
+}
+.pageTip .iconSpan{
+    display: block;
+    float: left;
+    width: 3.8rem;
+    height: 3.8rem;
+    font-size: 3.8rem;
+    color: #ed5660;
+    line-height: 3.8rem;
+    margin-left: -100%;
+    margin-top: 2.4rem;
+}
+.sureBtn{
+    display: block;
+    font-size: 2.8rem;
+    color: #008fff;
+    float: left;
+    line-height: 8.6rem;
+    margin-left: -6rem;
+}
+/*end 小贴士*/
+
+/*科目列表*/
+.subjectList{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 8.6rem;
+}
+.subjectListUl{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.subjectListUl li{
+    display: block;
+    width: 100%;
+    height: 15.4rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+.subjectLabel{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 15.4rem;
+}
+.subjectName{
+    display: block;
+    position: absolute;
+    left: 7.7rem;
+    top: 50%;
+    margin-top: -2rem;
+    font-size: 3.8rem;
+    line-height: 4rem;
+    color: #fff;
+}
+.subjectInput{display: none}
+.subjectItem1{
+    background: url("../images/化学.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+.subjectItem2{
+    background: url("../images/历史.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+.subjectItem3{
+    background: url("../images/地理.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+.subjectItem4{
+    background: url("../images/思想政治.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+.subjectItem5{
+    background: url("../images/技术.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+.subjectItem6{
+    background: url("../images/物理.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+.subjectItem7{
+    background: url("../images/生物.jpg") no-repeat 0 0;
+    background-size: 100% auto;
+}
+.subjectLabeActive{
+    background-color: rgba(0,0,0,.4);
+}
+/*end 科目列表*/

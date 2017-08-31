@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=0"/>
+    <title>大学</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/university.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+<article class="content">
+    <!-- 搜索栏 -->
+    <section class="searchBox">
+        <form method="post" class="searchForm" target="iframe" onsubmit="return false">
+            <div class="screenBox">
+                <span class="screenSpan iconfont icon-caidan-"></span>
+                筛选
+            </div>
+            <label class="searchInputBox" for="searchInput">
+                <span class="searchInputIcon icon-sousuo iconfont"></span>
+                <input type="search" class="searchInput" placeholder="请输入您要的大学名称" name="searchInput" id="searchInput"/>
+                <a class="searchBtn">搜索</a>
+            </label>
+            <iframe id="iframe" name="id_iframe" style="display: none"></iframe>
+        </form>
+    </section>
+    <!-- end 搜索栏 -->
+
+    <!-- 大学列表页 -->
+    <section class="universityListBox">
+        <ul class="universityList">
+
+        </ul>
+    </section>
+    <!-- end 大学列表页 -->
+
+    <!-- 加载模块 -->
+    <section class="loadBox">
+        <div class="load">
+            <span class="loadIcon"></span>
+            <span class="loadText">加载中...</span>
+        </div>
+    </section>
+    <!-- end 加载模块 -->
+
+    <!-- 筛选页面 -->
+    <section class="screenPage">
+        <header class="screenHeader">高校筛选</header>
+        <div class="screenPageBox">
+            <div class="screenContent">
+                <p class="screenTitleBox EducationScreen">
+                    <span class="screenTitle">学历层次</span>
+                    <svg class="screenTitleIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-xiangshang-"></use>
+                    </svg>
+                </p>
+                <ul class="screenBox1">
+                    <li>
+                        <label for="educationInput1">
+                            <input type="checkbox" id="educationInput1" name="0">
+                            <span class="educationText">本科</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="educationInput2">
+                            <input type="checkbox" id="educationInput2" name="1">
+                            <span class="educationText">专科</span>
+                        </label>
+                    </li>
+                </ul>
+                <p class="screenTitleBox heightSchoolScreen">
+                    <span class="screenTitle">高校标签</span>
+                    <svg class="screenTitleIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-xiangshang-"></use>
+                    </svg>
+                </p>
+                <ul class="screenBox2">
+                    <li>
+                        <label for="heightSchoolLableInput1">
+                            <input type="checkbox" id="heightSchoolLableInput1" name="1">
+                            <span class="educationText">211</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolLableInput2">
+                            <input type="checkbox" id="heightSchoolLableInput2" name="2">
+                            <span class="educationText">985</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolLableInput3">
+                            <input type="checkbox" id="heightSchoolLableInput3" name="3">
+                            <span class="educationText">研究生院</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolLableInput4">
+                            <input type="checkbox" id="heightSchoolLableInput4" name="4">
+                            <span class="educationText">国防生</span>
+                        </label>
+                    </li>
+                </ul>
+                <p class="screenTitleBox heightSchoolTypeScreen">
+                    <span class="screenTitle">高校类型</span>
+                    <svg class="screenTitleIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-xiangshang-"></use>
+                    </svg>
+                </p>
+                <ul class="screenBox3">
+                    <li>
+                        <label for="heightSchoolClassInput1">
+                            <input type="checkbox" id="heightSchoolClassInput1" name="0">
+                            <span class="educationText">综合类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput2">
+                            <input type="checkbox" id="heightSchoolClassInput2" name="1">
+                            <span class="educationText">理工类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput3">
+                            <input type="checkbox" id="heightSchoolClassInput3" name="2">
+                            <span class="educationText">师范类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput4">
+                            <input type="checkbox" id="heightSchoolClassInput4" name="3">
+                            <span class="educationText">农林类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput5">
+                            <input type="checkbox" id="heightSchoolClassInput5" name="4">
+                            <span class="educationText">政法类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput6">
+                            <input type="checkbox" id="heightSchoolClassInput6" name="5">
+                            <span class="educationText">医药类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput7">
+                            <input type="checkbox" id="heightSchoolClassInput7" name="6">
+                            <span class="educationText">财经类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput8">
+                            <input type="checkbox" id="heightSchoolClassInput8" name="7">
+                            <span class="educationText">民族类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput9">
+                            <input type="checkbox" id="heightSchoolClassInput9" name="8">
+                            <span class="educationText">语言类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput10">
+                            <input type="checkbox" id="heightSchoolClassInput10" name="9">
+                            <span class="educationText">艺术类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput11">
+                            <input type="checkbox" id="heightSchoolClassInput11" name="10">
+                            <span class="educationText">体育类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput12">
+                            <input type="checkbox" id="heightSchoolClassInput12" name="11">
+                            <span class="educationText">军事类</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="heightSchoolClassInput13">
+                            <input type="checkbox" id="heightSchoolClassInput13" name="12">
+                            <span class="educationText">旅游类</span>
+                        </label>
+                    </li>
+
+                </ul>
+                <p class="screenTitleBox stationScreen">
+                    <span class="screenTitle">地区</span>
+                    <svg class="screenTitleIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-xiangshang-"></use>
+                    </svg>
+                </p>
+                <ul class="screenBox4">
+                    <li>
+                        <label for="regionInput1">
+                            <input type="checkbox" id="regionInput1" name="2">
+                            <span class="educationText">北京</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput2">
+                            <input type="checkbox" id="regionInput2" name="3">
+                            <span class="educationText">天津</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput3">
+                            <input type="checkbox" id="regionInput3" name="4">
+                            <span class="educationText">河北省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput4">
+                            <input type="checkbox" id="regionInput4" name="5">
+                            <span class="educationText">山西省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput5">
+                            <input type="checkbox" id="regionInput5" name="6">
+                            <span class="educationText">内蒙古</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput6">
+                            <input type="checkbox" id="regionInput6" name="7">
+                            <span class="educationText">辽宁省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput7">
+                            <input type="checkbox" id="regionInput7" name="8">
+                            <span class="educationText">吉林省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput8">
+                            <input type="checkbox" id="regionInput8" name="9">
+                            <span class="educationText">黑龙江</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput9">
+                            <input type="checkbox" id="regionInput9" name="10">
+                            <span class="educationText">上海</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput10">
+                            <input type="checkbox" id="regionInput10" name="11">
+                            <span class="educationText">江苏省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput11">
+                            <input type="checkbox" id="regionInput11" name="12">
+                            <span class="educationText">浙江省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput12">
+                            <input type="checkbox" id="regionInput12" name="13">
+                            <span class="educationText">安徽省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput13">
+                            <input type="checkbox" id="regionInput13" name="14">
+                            <span class="educationText">福建省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput14">
+                            <input type="checkbox" id="regionInput14" name="15">
+                            <span class="educationText">江西省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput15">
+                            <input type="checkbox" id="regionInput15" name="16">
+                            <span class="educationText">山东省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput16">
+                            <input type="checkbox" id="regionInput16" name="17">
+                            <span class="educationText">河南省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput17">
+                            <input type="checkbox" id="regionInput17" name="18">
+                            <span class="educationText">湖北省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput18">
+                            <input type="checkbox" id="regionInput18" name="19">
+                            <span class="educationText">湖南省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput19">
+                            <input type="checkbox" id="regionInput19" name="20">
+                            <span class="educationText">广东省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput20">
+                            <input type="checkbox" id="regionInput20" name="21">
+                            <span class="educationText">广西</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput21">
+                            <input type="checkbox" id="regionInput21" name="22">
+                            <span class="educationText">海南省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput22">
+                            <input type="checkbox" id="regionInput22" name="23">
+                            <span class="educationText">重庆</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput23">
+                            <input type="checkbox" id="regionInput23" name="24">
+                            <span class="educationText">四川省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput24">
+                            <input type="checkbox" id="regionInput24" name="25">
+                            <span class="educationText">贵州省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput25">
+                            <input type="checkbox" id="regionInput25" name="26">
+                            <span class="educationText">云南省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput26">
+                            <input type="checkbox" id="regionInput26" name="27">
+                            <span class="educationText">西藏</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput27">
+                            <input type="checkbox" id="regionInput27" name="28">
+                            <span class="educationText">陕西省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput28">
+                            <input type="checkbox" id="regionInput28" name="29">
+                            <span class="educationText">甘肃省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput29">
+                            <input type="checkbox" id="regionInput29" name="30">
+                            <span class="educationText">青海省</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput30">
+                            <input type="checkbox" id="regionInput30" name="31">
+                            <span class="educationText">宁夏</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput31">
+                            <input type="checkbox" id="regionInput31" name="32">
+                            <span class="educationText">新疆</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput32">
+                            <input type="checkbox" id="regionInput32" name="33">
+                            <span class="educationText">台湾</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput33">
+                            <input type="checkbox" id="regionInput33" name="34">
+                            <span class="educationText">香港</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="regionInput34">
+                            <input type="checkbox" id="regionInput34" name="35">
+                            <span class="educationText">澳门</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="screenBtnBox">
+            <div class="screenBtn">
+                <button class="screenReset">重置</button>
+                <button class="screenSure">确定</button>
+            </div>
+        </div>
+    </section>
+    <!-- end 筛选页面 -->
+
+    <!-- 标签导航 -->
+    <nav class="lableNavBox">
+        <ul class="lableNav">
+            <li class="lableNavHome">
+                <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa8d5f7a759312016&redirect_uri=http%3a%2f%2fguoren.ueasier.com%2fguorenTeach%2findex.html&response_type=code&scope=snsapi_base#wechat_redirect">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-home-"></use>
+                    </svg>
+                    <span class="lableNavText">首页</span>
+                </a>
+            </li>
+            <li class="lableNavUniversity">
+                <a href="university.html" class="lableNavActive">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-daxue-1"></use>
+                    </svg>
+                    <span class="lableNavText">大学</span>
+                </a>
+            </li>
+            <li class="lableNavMajor">
+                <a href="major.html">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhuanye-"></use>
+                    </svg>
+                    <span class="lableNavText">专业</span>
+                </a>
+            </li>
+            <li class="lableNavMyself">
+                <a>
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-wode-"></use>
+                    </svg>
+                    <span class="lableNavText">我的</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end 标签导航 -->
+
+    <!-- 登陆验证 -->
+    <section class="loginBox">
+        <form class="login" method="post" action="" target="id_iframe">
+            <p class="loginTitle">升学百科</p>
+            <label for="mobilePhone">
+                <input type="tel" placeholder="手机号码/准考证号" id="mobilePhone" class="mobilePhone" maxlength="15"/>
+            </label>
+            <label for="passWord">
+                <input type="password" placeholder="密码" id="passWord" class="passWord"/>
+            </label>
+            <button class="loginBtn">登 录</button>
+            <a href="forgetPage.html" class="forgetLink">忘记密码</a>
+            <a href="registerPage.html" class="registerLink">注册</a>
+            <span class="closePage icon-guanbi- iconfont"></span>
+            <iframe id="id_iframe" name="id_iframe" style="display: none"></iframe>
+        </form>
+    </section>
+    <!-- end 登陆验证 -->
+
+    <!-- 登陆退出状态显示 -->
+    <section class="signOutShow"></section>
+    <!-- end 登陆退出状态显示-->
+</article>
+
+<script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+<!-- 引入 jQuery Mobile 库 -->
+<script type="text/javascript" src="min-js/zepto.min.js"></script>
+<script type="text/javascript" src="min-js/iconfont.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/university.js"></script>
+</body>
+</html>

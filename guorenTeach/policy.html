@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+    <title>高考咨询</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/policy.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+<article class="content">
+    <!-- 页面导航 -->
+    <section class="pageNavBox">
+        <ul class="pagenav">
+            <li class="pageActive">学业规划</li>
+            <li>职业规划</li>
+            <li>高考新政</li>
+            <li>常见问题</li>
+        </ul>
+    </section>
+    <!-- end 页面导航 -->
+
+    <!-- 页面内容 -->
+    <section class="pageContentBox">
+
+    </section>
+    <!-- end 页面内容 -->
+
+    <!-- 加载模块 -->
+    <section class="loadBox">
+        <div class="load">
+            <span class="loadIcon"></span>
+            <span class="loadText">加载中...</span>
+        </div>
+    </section>
+    <!-- end 加载模块 -->
+
+    <!-- 标签导航 -->
+    <nav class="lableNavBox">
+        <ul class="lableNav">
+            <li class="lableNavHome">
+                <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa8d5f7a759312016&redirect_uri=http%3a%2f%2fguoren.ueasier.com%2fguorenTeach%2findex.html&response_type=code&scope=snsapi_base#wechat_redirect">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-home-"></use>
+                    </svg>
+                    <span class="lableNavText">首页</span>
+                </a>
+            </li>
+            <li class="lableNavUniversity">
+                <a href="university.html">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-daxue-"></use>
+                    </svg>
+                    <span class="lableNavText">大学</span>
+                </a>
+            </li>
+            <li class="lableNavMajor">
+                <a href="major.html">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhuanye-"></use>
+                    </svg>
+                    <span class="lableNavText">专业</span>
+                </a>
+            </li>
+            <li>
+                <a href="userCenter.html">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-wode-"></use>
+                    </svg>
+                    <span class="lableNavText">我的</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end 标签导航 -->
+
+    <!-- 登陆验证 -->
+    <section class="loginBox">
+        <form class="login" method="post" action="" target="id_iframe">
+            <p class="loginTitle">升学百科</p>
+            <label for="mobilePhone">
+                <input type="tel" placeholder="手机号码/准考证号" id="mobilePhone" class="mobilePhone" maxlength="15"/>
+            </label>
+            <label for="passWord">
+                <input type="password" placeholder="密码" id="passWord" class="passWord"/>
+            </label>
+            <button class="loginBtn">登 录</button>
+            <a href="forgetPage.html" class="forgetLink">忘记密码</a>
+            <a href="registerPage.html" class="registerLink">注册</a>
+            <span class="closePage icon-guanbi- iconfont"></span>
+            <iframe id="id_iframe" name="id_iframe" style="display: none"></iframe>
+        </form>
+    </section>
+    <!-- end 登陆验证 -->
+
+    <!-- 登陆退出状态显示 -->
+    <section class="signOutShow"></section>
+    <!-- end 登陆退出状态显示-->
+</article>
+<script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="min-js/iconfont.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/policy.js"></script>
+</body>
+</html>

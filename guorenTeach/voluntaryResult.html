@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+    <title>志愿填报</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/voluntaryResult.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+<div class="bg"></div>
+<article class="content">
+    <!-- 导航标签 -->
+    <nav class="voluntaryNav">
+        <ul class="voluntaryNavUl">
+            <li data-navId="1" class="navActive">冲一冲</li>
+            <li data-navId="2">稳一稳</li>
+            <li data-navId="3">保一保</li>
+        </ul>
+    </nav>
+    <!-- end 导航标签 -->
+
+    <!-- 结果列表 -->
+    <section class="voluntaryList">
+        <div class="screenBtn">
+            <span class="screenBtnTitle">大学所在地:</span>
+            <span class="screenBtnContent">
+                <span class="screentext">全部</span>
+                <span class="iconfont icon-xiangshang- screenIcon"></span>
+            </span>
+        </div>
+        <ul class="voluntaryUl">
+
+        </ul>
+    </section>
+    <!-- end 结果列表 -->
+
+    <!-- 省份筛选列表 -->
+    <section class="screenBox">
+        <ul class="provinceScreenBox">
+
+        </ul>
+        <button class="closeScreen">取消</button>
+    </section>
+    <!-- end 省份筛选列表 -->
+
+    <!-- 状态提示框 -->
+    <section class="signOutShow"></section>
+    <!-- end 状态提示框-->
+</article>
+<script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="min-js/iconfont.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/voluntaryResult.js"></script>
+</body>
+</html>

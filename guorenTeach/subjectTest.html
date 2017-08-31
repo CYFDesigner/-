@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+    <title>科目选考</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/subjectTest.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+    <article class="content">
+        <!-- 小贴士 -->
+        <section class="pageTip">
+            <span class="tipText">小贴士<small>选考科目为7选3</small></span>
+            <span class="iconSpan iconfont icon-xiaotieshi-"></span>
+            <span class="sureBtn">确认</span>
+        </section>
+        <!-- end 小贴士 -->
+
+        <!-- 科目列表 -->
+        <section class="subjectList">
+            <ul class="subjectListUl">
+                <li class="subjectItem1">
+                    <label class="subjectLabel" for="1">
+                        <span class="subjectName">化学</span>
+                        <input class="subjectInput" type="checkbox" id="1">
+                    </label>
+                </li>
+                <li class="subjectItem2">
+                    <label class="subjectLabel" for="2">
+                        <span class="subjectName">历史</span>
+                        <input class="subjectInput" type="checkbox" id="2">
+                    </label>
+                </li>
+                <li class="subjectItem3">
+                    <label class="subjectLabel" for="3">
+                        <span class="subjectName">地理</span>
+                        <input class="subjectInput" type="checkbox" id="3">
+                    </label>
+                </li>
+                <li class="subjectItem4">
+                    <label class="subjectLabel" for="4">
+                        <span class="subjectName">思想政治</span>
+                        <input class="subjectInput" type="checkbox" id="4">
+                    </label>
+                </li>
+                <li class="subjectItem5">
+                    <label class="subjectLabel" for="5">
+                        <span class="subjectName">技术</span>
+                        <input class="subjectInput" type="checkbox" id="5">
+                    </label>
+                </li>
+                <li class="subjectItem6">
+                    <label class="subjectLabel" for="6">
+                        <span class="subjectName">物理</span>
+                        <input class="subjectInput" type="checkbox" id="6">
+                    </label>
+                </li>
+                <li class="subjectItem7">
+                    <label class="subjectLabel" for="7">
+                        <span class="subjectName">生物</span>
+                        <input class="subjectInput" type="checkbox" id="7">
+                    </label>
+                </li>
+            </ul>
+        </section>
+        <!-- end 科目列表 -->
+
+        <!-- 状态提示框 -->
+        <section class="signOutShow"></section>
+        <!-- end 状态提示框-->
+
+    </article>
+    <script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="min-js/highcharts.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="js/subjectTest.js"></script>
+    <script type="text/javascript" src="min-js/iconfont.js"></script>
+</body>
+</html>

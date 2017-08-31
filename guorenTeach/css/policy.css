@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/*页面导航*/
+.pageNavBox{
+    box-sizing: border-box;
+    width: 100%;
+    height: 7rem;
+    border-bottom: solid 0.1rem #cacaca;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+}
+.pagenav{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 6.8rem;
+    padding: 0 2.5rem;
+    overflow: hidden;
+    position: relative;
+}
+.pagenav li{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 6.8rem;
+    border-top: solid 0.3rem transparent;
+    border-bottom: solid 0.3rem transparent;
+    color: #363636;
+    font-size: 2.4rem;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+/*.pagenav li:nth-child(4){display: none}*/
+.pageActive{
+    color: #f85454!important;
+    border-bottom-color: #f85454!important;
+    position: relative;
+}
+.pageActive::after{
+    content: '';
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #f85454;
+    position: absolute;
+    left: 50%;
+    bottom: -0.5rem;
+    transform: rotate(45deg);
+}
+/*end 页面导航*/
+.pageContentBox{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 7rem;
+}
+.questionContent,.palicyContent,.newContent{
+    width: 100%;
+    overflow: hidden;
+}
+.palicyContent li,.questionContent li,.newContent li{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0 4rem;
+    border-top: solid 0.1rem #e0e0e0;
+    background-color: #fff;
+    overflow: hidden;
+}
+.palicyContent li a,.newContent li a{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.palicyText{
+    display: block;
+    float: left;
+    width: 48.2rem;
+    padding: 3.3rem 0;
+    font-size: 2.6rem;
+    line-height: 3rem;
+    color: #262626;
+    /*white-space:nowrap;*/
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.palicyIcon{
+    display: block;
+    float: right;
+    width: 2.4rem;
+    height: 2.4rem;
+    color: #333;
+    transform: rotate(-90deg);
+    margin-top: 3.6rem;
+    font-size: 2.4rem;
+}
+.questionDiv .palicyIcon{
+    transform: rotate(0deg);
+}
+.questionDiv{
+    width: 100%;
+    overflow: hidden;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.questionHide{
+    display: none;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    color: #5b5b5b;
+    line-height: 3.6rem;
+}

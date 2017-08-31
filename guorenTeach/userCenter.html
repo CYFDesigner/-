@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=0"/>
+    <title>个人中心</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/userCenter.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+<article class="content">
+    <!-- 用户头部 -->
+    <header class="userHeader">
+        <div class="userImg">
+            <span></span>
+        </div>
+        <p class="userName"></p>
+    </header>
+    <!-- end 用户头部 -->
+
+    <!-- 用户列表 -->
+    <section class="userListBox">
+        <ul class="userList">
+            <li>
+                <a href="myInfo.html">
+                    <span class="myInfoText">我的资料</span>
+                    <span class="myInfoIcon iconfont icon-xiangxia-"></span>
+                </a>
+            </li>
+            <li>
+                <a href="myFollow.html">
+                    <span class="myInfoText">我的收藏</span>
+                    <span class="myInfoIcon iconfont icon-xiangxia-"></span>
+                </a>
+            </li>
+            <li>
+                <a href="myAsk.html">
+                    <span class="myInfoText">我的问导师</span>
+                    <span class="myInfoIcon iconfont icon-xiangxia-"></span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="hightList">
+            <li class="set">
+                <a href="setPage.html">
+                    <span class="myInfoText">高级设置</span>
+                    <span class="myInfoIcon iconfont icon-xiangxia-"></span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- end 用户列表 -->
+
+    <!-- 标签导航 -->
+    <nav class="lableNavBox">
+        <ul class="lableNav">
+            <li class="lableNavHome">
+                <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa8d5f7a759312016&redirect_uri=http%3a%2f%2fguoren.ueasier.com%2fguorenTeach%2findex.html&response_type=code&scope=snsapi_base#wechat_redirect">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-home-"></use>
+                    </svg>
+                    <span class="lableNavText">首页</span>
+                </a>
+            </li>
+            <li class="lableNavUniversity">
+                <a href="university.html">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-daxue-"></use>
+                    </svg>
+                    <span class="lableNavText">大学</span>
+                </a>
+            </li>
+            <li class="lableNavMajor">
+                <a href="major.html">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhuanye-"></use>
+                    </svg>
+                    <span class="lableNavText">专业</span>
+                </a>
+            </li>
+            <li class="lableNavMyself">
+                <a class="lableNavActive">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-wode-1"></use>
+                    </svg>
+                    <span class="lableNavText">我的</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end 标签导航 -->
+</article>
+<script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="min-js/iconfont.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/userCenter.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+body,html{
+    margin: 0;
+}
+.pageContent{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 15px 40px 15px;
+    overflow: hidden;
+    font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background-color: #f3f3f3;
+    line-height: inherit;
+    font-size: 1rem;
+}

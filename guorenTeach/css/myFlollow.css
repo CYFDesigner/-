@@ -1,0 +1,153 @@
+@charset "UTF-8";
+body,html{
+    height: 100%;
+    background-color: #fff;
+}
+.content{
+    width: 100%;
+    overflow: hidden;
+}
+/*页面导航*/
+.pageNavBox{
+    display: block;
+    width: 100%;
+    border-bottom: solid 0.8rem #f4f4f4;
+    overflow: hidden;
+}
+.pageNav{
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    padding:0 3.4rem;
+    margin-top: 2.8rem;
+}
+.pageNav li{
+    box-sizing: border-box;
+    display: block;
+    width: 24.6rem;
+    height: 6rem;
+    border-bottom: solid 0.3rem transparent;
+    float: left;
+    line-height: 5.2rem;
+    text-align: center;
+    font-size: 2.6rem;
+    color: #7c7c7c;
+    position: relative;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.pageNav li:nth-child(1){float: left}
+.pageNav li:nth-child(2){float: right}
+.pageActive{
+    border-bottom-color: #f83939!important;
+    color: #f74444!important;
+}
+.pageActive::before{
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #f83939;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 50%;
+    bottom: -0.707rem;
+    margin-left: -0.707rem;
+}
+/*end 页面导航*/
+
+/*页面内容*/
+.pageContent{
+    width: 100%;
+    overflow: hidden;
+}
+.collectMajorBox{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 2.4rem;
+}
+.collectMajorBox li{
+    box-sizing: border-box;
+    width: 100%;
+    height: 5rem;
+    border-bottom: solid 0.1rem #e6e6e6;
+    margin-top: 2.7rem;
+}
+.majorNumber,.majorNameList,.majorEducation{
+    display: block;
+    width: 11rem;
+    float: left;
+    line-height: 4.8rem;
+    font-size: 2.4rem;
+    color: #333!important;
+}
+.majorNameList{
+    width: 31rem!important;
+    margin-left: 8rem;
+}
+.majorIcon{
+    display: block;
+    float: right;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-top: 1rem;
+    color: #ffcf54;
+    font-size: 2.4rem;
+}
+.majorEducation{
+    width: 5rem;
+    float: right;
+    font-size: 2rem!important;
+    color: #878787!important;
+    text-align: right;
+}
+.collectUniversityBox{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 0.1rem;
+}
+.collectUniversityBox li{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 10.7rem;
+    padding: 1rem 3.4rem;
+    border-bottom: solid 0.1rem #e6e6e6;
+}
+.collectUniversityBox a{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+.universityLogo{
+    display: block;
+    float: left;
+    width: 6.9rem;
+    height: 6.9rem;
+    margin-top: 0.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.universityLogo img{
+    width: 100%;
+    height: 100%;
+}
+.universityName{
+    display: block;
+    float: left;
+    margin-left: 2.6rem;
+    line-height: 8.6rem;
+    font-size: 3rem;
+    color: #333;
+}
+.noData{
+    display: block!important;
+    width: 100%!important;
+    height: 8rem!important;
+    font-size: 2.2rem!important;
+    color: #333333!important;
+    line-height: 8rem!important;
+    text-align: center!important;
+    border: 0!important;
+}
+/*end 页面内容*/

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+    <title>职业选考</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/majorTest.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+<article class="content">
+    <!-- 搜索框 -->
+    <form method="post" class="searchBox" id="searchBox" target="iframe" onsubmit="return false">
+        <div class="logoBox"></div>
+        <label for="searchInput" class="searchLable">
+            <span class="iconfont icon-sousuo iconSpan"></span>
+            <input type="search" class="searchInput" id="searchInput" name="searchInput" placeholder="输入您想要搜索的职业"/>
+            <a class="searchBtn">搜索</a>
+        </label>
+    </form>
+    <iframe id="iframe" name="id_iframe" style="display: none"></iframe>
+    <!-- end 搜索框 -->
+
+    <!-- 内容列表 -->
+    <section class="contentListBox">
+        <ul class="contentList">
+
+        </ul>
+    </section>
+    <!-- end 内容列表 -->
+
+    <!-- 筛选内容 -->
+    <section class="screenBox">
+        <ul class="screenLinkBox">
+            <!--<li>计算机硬件</li>-->
+            <!--<li>计算机软件</li>-->
+            <!--<li>网络</li>-->
+        </ul>
+        <button class="closeScreen">取消</button>
+    </section>
+    <!-- end 筛选内容 -->
+</article>
+<script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="min-js/iconfont.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/majorTest.js"></script>
+</body>
+</html>

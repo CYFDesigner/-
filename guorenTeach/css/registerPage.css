@@ -1,0 +1,100 @@
+@charset "UTF-8";
+button,input{
+    font-family: '微软雅黑';
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+html,body{height: 100%}
+.content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+.registerBox{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 7.3rem;
+    margin-top: 3.5rem;
+    position: relative;
+}
+.phoneNumberLable,.verificationLable{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+    position: relative;
+}
+.verificationLable{
+    margin-top: 1.9rem;
+}
+.phoneNumber,.verificationNumber,.username,.password,.passwordTrue,.testNumber{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 7.4rem;
+    padding: 2.4rem 0 2.4rem 7.4rem;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px #cccccc;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: 0 0 0 0 transparent;
+    line-height: normal;
+    font-size: 2.8rem;
+    color: #333;
+}
+.phoneIcon{
+    display: block;
+    width: 2.7rem;
+    height: 4rem;
+    color: #f95353;
+    font-size: 4rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    margin: -2.4rem 0 0 0;
+}
+.phoneNumberLable:before{
+    content: '+86';
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    font-size: 3.2rem;
+    width: 6.2rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+.getVerification{
+    display: block;
+    width: 17.4rem;
+    height: 4.1rem;
+    border-radius: 0.4rem;
+    border: 0;
+    background-color: #f95353;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 4.1rem;
+    position: absolute;
+    right: 0;
+    top: 1.7rem;
+}
+.sureBtn,.cancel{
+    display: block;
+    width: 100%;
+    height: 6.7rem;
+    background-color: #f95353;
+    border-radius: 1rem;
+    line-height: 6.7rem;
+    color: #fff;
+    font-size: 3.2rem;
+    text-align: center;
+    border: 0;
+    margin-top: 5.2rem;
+}
+.cancel{
+    background-color: #b0b0b0;
+    margin-top: 2rem;
+}

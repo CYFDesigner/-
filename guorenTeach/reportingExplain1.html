@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5,maximum-scale=1.0,user-scalable=no"/>
+    <title>了解性格</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/reportingExplain.css" />
+</head>
+<body>
+    <article class="content">
+        <div class="reportingTitle">了解性格</div>
+        <div class="reportingImg">
+            <img src="images/性格.jpg">
+        </div>
+        <div class="reportingText">
+            <span class="contentTitle">测试简介：</span>
+            <p>该测评由美国南加州大学统计学研究所和科罗拉大学行为研究所共同开发，通过对“性格色彩密码”的解读，帮助你学会以“有色”眼睛洞察人性，增强对人生的洞察力，并修炼个性，从而掌握自己的命运。</p>
+            <span class="contentTitle">测试参数：</span>
+            <div>
+                试题数目：共30题<br />
+                预计时长：3-5分钟<br />
+                测试对象：高中学生
+            </div>
+            <span class="contentTitle">测试要求: </span>
+            <div>
+                1、所有问题没有好坏或对错之分，因此请一定要选择你“最自然的”反应，而不是你认为“最好的”或“最适合的”。<br />
+                2、做测试之前，一定要抱着认真的态度，这不是娱乐。为了保证测试的严谨性，本测试半年内只可以做一次。
+            </div>
+        </div>
+        <a class="reportingTest">开始测试</a>
+
+        <!-- 登陆验证 -->
+        <section class="loginBox">
+            <form class="login" method="post" action="" target="id_iframe">
+                <p class="loginTitle">升学百科</p>
+                <label for="mobilePhone">
+                    <input type="tel" placeholder="手机号码/准考证号" id="mobilePhone" class="mobilePhone" maxlength="15"/>
+                </label>
+                <label for="passWord">
+                    <input type="password" placeholder="密码" id="passWord" class="passWord"/>
+                </label>
+                <button class="loginBtn">登 录</button>
+                <a href="forgetPage.html" class="forgetLink">忘记密码</a>
+                <a href="registerPage.html" class="registerLink">注册</a>
+                <span class="closePage icon-guanbi- iconfont"></span>
+                <iframe id="id_iframe" name="id_iframe" style="display: none"></iframe>
+            </form>
+        </section>
+        <!-- end 登陆验证 -->
+
+        <!-- 状态提示框 -->
+        <section class="signOutShow"></section>
+        <!-- end 状态提示框-->
+    </article>
+    <script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/automaticLogin.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="min-js/iconfont.js"></script>
+    <script type="text/javascript" src="js/reportingExplain.js"></script>
+</body>
+</html>

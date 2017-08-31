@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+    <title>我的资料</title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/myInfo.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+<article class="content">
+    <!-- 提示区 -->
+    <section class="prompt">请完善信息以便我们提供更适合您的内容</section>
+    <!-- end 提示区 -->
+
+    <!-- 表单区 -->
+    <section class="formBox">
+        <form class="form" method="post" action="" target="id_iframe">
+            <label for="addressBox">
+                <input type="text" class="addressBox" id="addressBox" placeholder="省份/城市" readonly/>
+            </label>
+            <label for="schoolBox">
+                <input type="text" class="schoolBox" id="schoolBox" placeholder="学校" readonly/>
+            </label>
+            <label for="gradeBox">
+                <input type="text" class="gradeBox" id="gradeBox" placeholder="年级" readonly/>
+            </label>
+            <button class="submitBtn">完成</button>
+            <iframe id="id_iframe" name="id_iframe" style="display: none"></iframe>
+        </form>
+    </section>
+    <!-- end 表单区 -->
+
+    <!-- 选项区 -->
+    <section class="selectBox">
+        <!-- 省份/城市选择区 -->
+        <section class="ProvinceBox">
+            <ul class="Province">
+
+            </ul>
+            <ul class="City">
+
+            </ul>
+        </section>
+        <!-- end 省份/城市选择区 -->
+
+        <!-- 学校选择区 -->
+        <section class="schoolSelectBox">
+            <ul class="school">
+
+            </ul>
+        </section>
+        <!-- end 学校选择区 -->
+
+        <!-- 年级选择区 -->
+        <section class="gradeSelectBox">
+            <ul class="grade">
+                <li>高一</li>
+                <li>高二</li>
+                <li>高三</li>
+            </ul>
+        </section>
+        <!-- end 年级选择区 -->
+    </section>
+    <!-- end 选项区 -->
+
+    <!-- 登陆退出状态显示 -->
+    <section class="signOutShow"></section>
+    <!-- end 登陆退出状态显示-->
+</article>
+<script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="min-js/iconfont.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/myInfo.js"></script>
+</body>
+</html>

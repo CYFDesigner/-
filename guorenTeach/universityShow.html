@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+    <title></title>
+    <script type="text/javascript" src="js/Adaptation.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/universityShow.css" />
+</head>
+<body>
+<!--页面加载动画-->
+<section class="pageAnimate"></section>
+<!--end 页面加载动画-->
+<article class="content">
+    <!-- 大学概述 -->
+    <section class="universitySummary">
+        <div class="universityLogo"></div>
+        <div class="universityInfo">
+            <p class="universityName"></p>
+            <ul class="universityClass"></ul>
+            <ul class="universityLable">
+
+            </ul>
+        </div>
+        <div class="collectBtn">
+            <svg class="collectIcon icon" aria-hidden="true">
+                <use xlink:href="#icon-shoucang-1"></use>
+            </svg>
+            <span class="collectText">已收藏</span>
+        </div>
+    </section>
+    <!-- end 大学概述 -->
+
+    <!-- 大学详情 -->
+    <section class="universityDetails">
+        <nav class="detailsNavBox">
+            <ul class="detailsNav">
+                <li class="detailsProfiles detailsActive">学校简介</li>
+                <li class="detailsProfiles">选考要求</li>
+                <li class="detailsProfiles">录取分数</li>
+                <li class="detailsProfiles">食宿配置</li>
+            </ul>
+        </nav>
+
+        <div class="detailsContentBox">
+            <div class="detailsTextBox">
+
+            </div>
+            <!-- 录取分数参考须知 -->
+            <div class="detailsHelpShow">
+                <div class="detailsHelpTitle">录取分数参考须知</div>
+                <p>
+                    批次线：是批次录取控制分数线的简称，是根据各省（直辖市、自治区）考生高考成绩水平和招生计划，按一定的比例确定的录取新生的各批次、各科类最低成绩标准。<br /><br />
+                    最低分：指招生院校在本批次录取结束后，分文、理所录取考生中的最低分数。<br /><br />
+                    最低分位次：指招生院校在本批次录取结束后，分文、理所录取考生中的最低分数学生在全省的分数排名。<br /><br />
+                    录取批次：各省招生主管部门根据高校的实力、办学质量等条件，将有招生计划的高校划分为若干个录取批次，各批次是互不影响的独立过程，上一个批次的高校录取结束以后，下一个批次的高校才能开始录取。<br /><br />
+                    线差: 是录取线差分，是指招生院校的录取平均分与省控分数线之差。<br /><br />
+                    人数：指招生院校文、理科招入的学生人数。<br /><br />
+                    数据来源于《广东省填报志愿指南》
+                </p>
+            </div>
+            <!-- end 录取分数参考须知-->
+        </div>
+    </section>
+    <!-- end 大学详情 -->
+
+    <!-- 开办专业筛选列表 -->
+    <section class="majorScreen">
+        <section class="majorProvinceBox">
+            <ul class="majorProvinceScreen"></ul>
+        </section>
+        <section class="majorBatchBtnBox">
+            <ul class="majorBatchScreen"></ul>
+        </section>
+        <section class="majorYearBtnBox">
+            <ul class="majorYearScreen"></ul>
+        </section>
+    </section>
+    <!-- end 开办专业筛选列表 -->
+
+    <!-- 招新计划筛选列表 -->
+    <section class="screenBox">
+        <section class="stationScreenBox">
+            <ul class="Province"></ul>
+        </section>
+        <section class="planTypeBox">
+            <ul class="planType"></ul>
+        </section>
+        <section class="specialtyLevelBox">
+            <ul class="specialtyLevel"></ul>
+        </section>
+        <section class="specialtyTypeBox">
+            <ul class="specialtyType"></ul>
+        </section>
+        <section class="yearScreen">
+            <ul class="year"></ul>
+        </section>
+    </section>
+    <!-- end 招新计划筛选列表-->
+
+    <!-- 录取分数筛选列表 -->
+    <section class="admissionScreen">
+        <section class="admissionProvinceBox">
+            <ul class="admissionProvinceScreen"></ul>
+        </section>
+        <section class="admissionBatchBtnBox">
+            <ul class="admissionBatchScreen"></ul>
+        </section>
+        <section class="admissionTypeBtnBox">
+            <ul class="admissionTypeScreen"></ul>
+        </section>
+        <section class="admissionYearBtnBox">
+            <ul class="admissionYearScreen"></ul>
+        </section>
+    </section>
+    <!-- end 录取分数筛选列表 -->
+
+    <!-- 标签导航 -->
+    <nav class="lableNavBox">
+        <ul class="lableNav">
+            <li class="lableNavHome">
+                <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa8d5f7a759312016&redirect_uri=http%3a%2f%2fguoren.ueasier.com%2fguorenTeach%2findex.html&response_type=code&scope=snsapi_base#wechat_redirect">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-home-"></use>
+                    </svg>
+                    <span class="lableNavText">首页</span>
+                </a>
+            </li>
+            <li class="lableNavUniversity">
+                <a href="university.html" class="lableNavActive">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-daxue-1"></use>
+                    </svg>
+                    <span class="lableNavText">大学</span>
+                </a>
+            </li>
+            <li class="lableNavMajor">
+                <a href="major.html">
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhuanye-"></use>
+                    </svg>
+                    <span class="lableNavText">专业</span>
+                </a>
+            </li>
+            <li class="lableNavMyself">
+                <a>
+                    <svg class="lableNavIcon icon" aria-hidden="true">
+                        <use xlink:href="#icon-wode-"></use>
+                    </svg>
+                    <span class="lableNavText">我的</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end 标签导航 -->
+
+    <!-- 登陆验证 -->
+    <section class="loginBox">
+        <form class="login" method="post" action="" target="id_iframe">
+            <p class="loginTitle">升学百科</p>
+            <label for="mobilePhone">
+                <input type="tel" placeholder="手机号码/准考证号" id="mobilePhone" class="mobilePhone" maxlength="15"/>
+            </label>
+            <label for="passWord">
+                <input type="password" placeholder="密码" id="passWord" class="passWord"/>
+            </label>
+            <button class="loginBtn">登 录</button>
+            <a href="forgetPage.html" class="forgetLink">忘记密码</a>
+            <a href="registerPage.html" class="registerLink">注册</a>
+            <span class="closePage icon-guanbi- iconfont"></span>
+            <iframe id="id_iframe" name="id_iframe" style="display: none"></iframe>
+        </form>
+    </section>
+    <!-- end 登陆验证 -->
+
+    <!-- 登陆退出状态显示 -->
+    <section class="signOutShow"></section>
+    <!-- end 登陆退出状态显示-->
+</article>
+<script type="text/javascript" src="min-js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="min-js/highcharts.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/universityShow.js"></script>
+<script type="text/javascript" src="min-js/iconfont.js"></script>
+</body>
+</html>

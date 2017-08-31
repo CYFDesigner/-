@@ -1,0 +1,143 @@
+@charset "UTF-8";
+html,body,.content{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*订购内容*/
+.buyItem{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.buyTitle{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 2.6rem;
+    padding: 0 0 0 3.5rem;
+    margin-top: 4.2rem;
+    line-height: 2.6rem;
+    color: #333;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+.oneBuyBox{
+    display: block;
+    width: 100%;
+    margin-top: 2.2rem;
+    overflow: hidden;
+}
+.oneBuyUl,.twoBuyUl{
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+.oneBuyUl li,.twoBuyUl li{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 9.2rem;
+    padding: 0 3.4rem;
+    border-bottom: solid 1px #c6c6c6;
+}
+.oneBuyUl .iconSpan,.twoBuyUl .iconSpan{
+    display: block;
+    float: left;
+    font-size: 3.2rem;
+    line-height: 9.2rem;
+    color: #4a6672;
+}
+.buyText{
+    display: block;
+    float: left;
+    font-size: 2.2rem;
+    line-height: 9.2rem;
+    color: #333;
+    margin-left: 2.6rem;
+}
+.iconTrue{
+    display: block;
+    float: right;
+    font-size: 2.4rem;
+    line-height: 9.2rem;
+    color: #61c94b;
+}
+/*end 订购内容*/
+
+/*支付方式*/
+.payFunction{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1rem;
+    border: solid 1px #c6c6c6;
+    border-left: 0;
+    border-right: 0;
+    background-color: #fff;
+}
+.payUl{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.payUl li{
+    display: block;
+    width: 100%;
+    height: 9.2rem;
+    box-sizing: border-box;
+    padding: 0 3.4rem;
+    line-height: 9.2rem;
+}
+.iconWx{
+    display: block;
+    float: left;
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 4.5rem;
+    color: #06b510;
+    line-height: 9.2rem;
+}
+/*end 支付方式*/
+
+/*合计*/
+.sumBox{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 8.9rem;
+    padding: 0 3.4rem;
+    border-top: solid 1px #c6c6c6;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.sumNumber{
+    display: block;
+    float: left;
+    line-height: 8.8rem;
+    color: #333;
+    font-size: 2.4rem;
+}
+.moneyBox{font-size: 3rem!important;}
+.sumNumber .y,.moneyBox{color: #f57374}
+.payButton{
+    display: block;
+    float: right;
+    width: 14.7rem;
+    height: 6.2rem;
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 6.2rem;
+    color: #fff;
+    background-color: #f57374;
+    border-radius: 0.6rem;
+    margin-top: -3.1rem;
+    position: absolute;
+    right: 3.4rem;
+    top: 50%;
+}
+/*end 合计*/
